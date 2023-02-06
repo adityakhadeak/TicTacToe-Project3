@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/AK.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            Tic-<span>Tac</span>-Toe
+        </h1>
+        <p>By Aditya Khade</p>
+    </div>
+    <div class="game-container">
+        <div class="rule">
+            <h2>Who to play first X or 0??</h2>
+            <label for="xoro"><input type="radio" value="X" name="xoro" id="x">X</label>
+            <label for="xoro"><input type="radio" value="0" name="xoro" id="0">0</label>
+            <button onclick="firstplay()" id="play" type="submit">Play</button>
+        </div>
+        <div class="main-container">
+
+            <div class="box" id="box-1" onclick="play()"></div>
+            <div class="box" id="box-2" onclick="play()"></div>
+            <div class="box" id="box-3" onclick="play()"></div>
+            <div class="box" id="box-4" onclick="play()"></div>
+            <div class="box" id="box-5" onclick="play()"></div>
+            <div class="box" id="box-6" onclick="play()"></div>
+            <div class="box" id="box-7" onclick="play()"></div>
+            <div class="box" id="box-8" onclick="play()"></div>
+            <div class="box" id="box-9" onclick="play()"></div>
+        </div>
+    </div>
+    <div class="info">
+        <h3 id="turn">Turn for 0</h3>
+        <button id="reset">Reset</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c1d45e04f7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

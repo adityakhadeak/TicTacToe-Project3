@@ -1,0 +1,132 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0%;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+span {
+    color: rgb(250, 29, 99);
+}
+
+p {
+    margin: 0;
+    line-height: 1px;
+    color: white;
+    text-align: center;
+}
+
+.game-container {
+    display: flex;
+}
+
+.rule {
+    display: flex;
+    width: fit-content;
+    margin: 10px auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rule input {
+    color: white;
+    margin: 10px;
+}
+
+.main-container {
+    width: 30vw;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw;
+    grid-template-rows: 10vw 10vw 10vw;
+    gap: 0px;
+}
+
+.main-container>div {
+    background-color: rgb(36, 36, 36);
+    border: rgb(116, 116, 116) solid 3px;
+
+    font-size: 8rem;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: -45px auto;
+    align-items: center;
+}
+
+#reset {
+    background-color: #fa1d63;
+    width: 77px;
+    padding: 10px;
+    height: 38px;
+    border-radius: 10px;
+    border: solid rgb(255, 255, 255) 2px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#play {
+    margin-left: 10px;
+    background-color: #fa1d63;
+    width: 80px;
+    padding: 10px;
+    height: 38px;
+    border: solid rgb(255, 255, 255) 2px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:600px) {
+    .game-container {
+        flex-direction: column;
+    }
+
+    .header p {
+        margin-top: -20px;
+    }
+
+    .rule {
+        font-size: 0.8rem;
+        margin-top: 30px;
+    }
+
+    .main-container {
+        width: 54vw;
+        margin: 20px auto;
+        grid-template-columns: 18vw 18vw 18vw;
+        grid-template-rows: 18vw 18vw 18vw;
+    }
+
+    .info {
+       
+        margin: 0 auto
+      
+    }
+}
