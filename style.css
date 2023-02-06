@@ -123,6 +123,10 @@ p {
         grid-template-columns: 18vw 18vw 18vw;
         grid-template-rows: 18vw 18vw 18vw;
     }
+    
+    .main-container>div {
+    font-size: 2rem;
+}
 
     .info {
        
