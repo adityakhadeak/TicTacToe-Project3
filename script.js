@@ -25,16 +25,22 @@ function checkwin() {
         [1, 4, 7],
         [2, 5, 8]
     ]
-    win.forEach(e => {
+   win.forEach(e => {
         if (((box[e[0]].innerText) == (box[e[1]].innerText)) && ((box[e[1]].innerText) == (box[e[2]].innerText)) && ((box[e[0]].innerText)) != "") {
             document.getElementById("turn").innerText = `${box[e[0]].innerText} Won`
+            whowon = box[e[0]].innerText;
+            won = "yes";
             Array.from(box, (element) => {
                 element.style = "pointer-events:none"
             });
         }
 
         else if (xoro >= 9) {
-            document.getElementById("turn").innerText = `Game Draw`
+            if (won == "yes")
+                document.getElementById("turn").innerText = `${whowon} Won`
+            else
+                document.getElementById("turn").innerText = `Game Draw`
+
         }
     });
 }
