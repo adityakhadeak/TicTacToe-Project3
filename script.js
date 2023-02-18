@@ -1,3 +1,5 @@
+var whowon
+var won
 var xoro = 1;
 window.toplay = "0"
 function firstplay() {
